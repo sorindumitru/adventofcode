@@ -1,0 +1,41 @@
+name:                advent-template
+version:             0.1.0.0
+synopsis:            Initial project template from stack
+description:         Please see README.md
+homepage:            http://github.com/name/project
+license:             BSD3
+license-file:        LICENSE
+author:              Sorin Dumitru
+maintainer:	     sorin@returnze.ro
+-- copyright:           
+category:            Web
+build-type:          Simple
+-- extra-source-files:  
+cabal-version:       >=1.10
+
+executable day1
+  hs-source-dirs:      day1
+  main-is:             Main.hs
+  ghc-options:         -threaded -rtsopts -with-rtsopts=-N
+  build-depends:       base
+  default-language:    Haskell2010
+
+executable day2
+  hs-source-dirs:      day2
+  main-is:             Main.hs
+  ghc-options:         -threaded -rtsopts -with-rtsopts=-N
+  build-depends:       base
+                     , parsec
+  default-language:    Haskell2010
+
+executable day3
+  hs-source-dirs:      day3
+  main-is:             Main.hs
+  ghc-options:         -threaded -rtsopts -with-rtsopts=-N
+  build-depends:       base
+                     , parsec
+  default-language:    Haskell2010
+
+source-repository head
+  type:     git
+  location: https://github.com/sorindumitru/advent.git
