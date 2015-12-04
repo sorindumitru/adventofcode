@@ -1,2 +1,6 @@
+import Control.Monad
+
 main :: IO ()
-main = return ()
+main = do
+    input <- getContents
+    return ()
